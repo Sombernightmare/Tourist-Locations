@@ -22,7 +22,7 @@ class LocationDetail extends StatelessWidget {
   List<Widget> _renderBody(BuildContext context, Location location) {
     var result = List<Widget>();
 
-    result.add(_bannerImage(location.url, 200.0));
+    result.add(_bannerImage(location.url, 170.0));
     result.addAll(_renderFacts(context, location));
     return result;
   }
@@ -48,7 +48,7 @@ class LocationDetail extends StatelessWidget {
 
   Widget _sectionText(String text) {
     return Container(
-        padding: EdgeInsets.fromLTRB(25.00, 5.00, 25.00, 10.0),
+        padding: EdgeInsets.fromLTRB(25.00, 15.00, 25.00, 15.0),
         child: Text(text, style: Styles.textDefualt,));
   }
 

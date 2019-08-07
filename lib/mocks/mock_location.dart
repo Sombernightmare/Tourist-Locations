@@ -72,14 +72,28 @@ class MockLocation extends Location {
               title: 'Did You Know',
               text:
                   'The pedestrian path begins a short walk from Shibaura-futo Station along the Yurikamome on the "Tokyo side" of the bridge, while Odaiba Kaihinkoen Station is the nearest station on the "Odaiba side."')
+        ]),
+    Location(
+        name: 'Hiroshima Peace Memorial',
+        url:
+            'https://cdn.pixabay.com/photo/2017/10/07/14/52/atomic-2826708_960_720.jpg',
+        facts: <LocationFact>[
+          LocationFact(
+              title: 'Summary',
+              text:
+                  'The Hiroshima Peace Memorial is a haunting tribute to the lives lost when the atomic bomb was dropped on Hiroshima on August 6, 1945. Set in a park, the memorial features Genbaku Dome, the only building left standing in the vicinity after the bomb dropped. This harsh reminder of a world at war reminds visitors of the importance of human life and honors the victims so they will never be forgotten.'),
+          LocationFact(
+              title: 'Did You Know',
+              text:
+                  "Though the number of surviving hibakusha is dwindling, the city is making a concerted effort to document their stories on paper and film. In one of the museum's special exhibits, survivors' drawings are captured for posterity, depicting the memories that individuals across Japan still hold of the day that changed their country forever.")
         ])
   ];
 
   static Location fetchAny() {
     return MockLocation.items[0];
-     }
+  }
 
-     static List<Location> fetchAll() {
-       return MockLocation.items;
-     }
+  static List<Location> fetchAll() {
+    return MockLocation.items;
+  }
 }
